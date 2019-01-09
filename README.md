@@ -10,7 +10,7 @@ $ docker build -t ubuntu-truffle-ganache-cli .
 
 ## run docker container
 
-Mount the current directory in `/dapps` and start up the container.
+Mount the current directory in `/dapps` and start up the container.  
 Add the `-p` option for the required port.
 
 ```
@@ -19,7 +19,7 @@ $ docker run -it --mount type=bind,src=$(pwd)/,dst=/dapps -p 8545:8545 ubuntu-tr
 
 ## run ganache-cli
 
-Create `/var/ganache` for data persistence.
+Create `/var/ganache` for data persistence.  
 Change `--mnemonic` option to anything you like.
 
 ```
